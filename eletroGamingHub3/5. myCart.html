@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5. myCart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+  <!-- Header -->
+  <div class="fixed">
+    <header class="text-light py-3" style="background-color: #261d39;">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left Section: Logo -->
+        <div class="d-flex align-items-center me-1 logo" style="flex: 1;">
+          <a href="2. home.html"><img src="logo.png" alt="Electro Gaming Hub" class="logo" height="100px"></a>
+        </div>
+  
+        <!-- Middle Section: Search Bar -->
+  <div class="flex-grow-1 me-5" style="flex: 1;">
+    <div class="input-group">
+      <input type="text" class="form-control search-bar" placeholder="Search" aria-label="Search">
+      <a href="3. productList.html" class="btn btn-outline-light">
+        <i class="bi bi-search"></i>
+      </a>
+    </div>
+  </div>
+  
+  
+        <!-- Right Section: User Section -->
+        <div class="d-flex align-items-center" style="flex: 1;">
+          <div class="text-end ms-5 me-5">
+            <span>CHARRYL SUBRIO</span><br>
+            <a href="7. myAccount.html" class="text-light no-underline" style="text-decoration: none;">
+              <i class="bi bi-person" style="color: #ffc10d;"></i> My Account
+            </a>
+          </div>
+          <div class="ms-5">
+            <a href="5. myCart.html" class="text-light no-underline" style="text-decoration: none;">
+              <i class="bi bi-cart-fill" style="color: #ffc10d;"></i> My Cart
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+  
+      <!-- Navigation Menu -->
+      <div class="navbg">
+      <nav class="category-buttons-nav">
+          <div class="container-fluid text-center my-3">
+              <div class="category-buttons d-flex justify-content-center flex-wrap">
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Home</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Playstation</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Nintendo</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Xbox</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Desktop</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Laptop</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Games</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Accessories</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Collectibles</strong></button></a>
+                <a href="2. home.html" style="text-decoration: none;"><button class="btn btn-outline-secondary equal-width"><strong>Promos</strong></button></a>
+              </div>
+          </div>
+      </nav>
+    </div>
+  </div>
+  
+    <main class="container py-4">
+        <h2>My Cart</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="product1.webp" height="100px;">
+                                GPD Oculink Cable SFF-8611 + M.2 to Oculink 8612 Adapter Card for GPD G1 Graphics Card Expansion Dock<br>
+                                <strong>₱2,095.00</strong>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary btn-sm">-</button>
+                                    <input type="text" class="form-control form-control-sm text-center" value="1">
+                                    <button class="btn btn-outline-secondary btn-sm">+</button>
+                                </div>
+                                <a href="#" class="text-danger small d-block">Remove</a>
+                            </td>
+                            <td>₱2,095.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <img src="product1.webp" height="100px;">
+                                GPD Win Mini AMD Ryzen 7 7840U 7" LTPS Technology 120Hz 32GB RAM + 2TB SSD<br>
+                                <strong>₱42,995.00</strong>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary btn-sm">-</button>
+                                    <input type="text" class="form-control form-control-sm text-center" value="1">
+                                    <button class="btn btn-outline-secondary btn-sm">+</button>
+                                </div>
+                                <a href="#" class="text-danger small d-block">Remove</a>
+                            </td>
+                            <td>₱42,995.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Total</h4>
+                        <p><strong>₱45,090.00</strong></p>
+                        <div class="mb-3">
+                            <label for="instructions" class="form-label">Order instructions</label>
+                            <textarea id="instructions" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-primary w-100">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-5 text-center text-muted">
+            <div>100% Secure Payments | Fast Shipping Nationwide | Save on Loyalty Rewards</div>
+        </footer>
+    </main>
+
+<!-- Footer -->
+<div class="qualities">
+  <div class="container">
+    <div class="row text-center mt-5">
+      <!-- Trusted Store Feature -->
+      <div class="col-md-3 footer-item">
+        <i class="bi bi-check-circle fs-2"></i> <!-- Icon for trusted store -->
+        <h6>Your Most Trusted Gaming Store</h6>
+        <p>100% All Brand New & Original. Shop with confidence!</p>
+      </div>
+      
+      <!-- Fast Shipping Feature -->
+      <div class="col-md-3 footer-item">
+        <i class="bi bi-truck fs-2"></i> <!-- Icon for fast shipping -->
+        <h6>Fast Shipping Nationwide</h6>
+        <p>Ships in 24 Hours! Express and Same-Day Delivery within Metro Manila!</p>
+      </div>
+  
+      <!-- Loyalty Rewards Feature -->
+      <div class="col-md-3 footer-item">
+        <i class="bi bi-gem fs-2"></i> <!-- Icon for loyalty rewards -->
+        <h6>Save on Loyalty Rewards</h6>
+        <p>Sign in to start earning Loyalty Rewards Points!</p>
+      </div>
+  
+      <!-- Safe and Secure Feature -->
+      <div class="col-md-3 footer-item">
+        <i class="bi bi-shield-lock fs-2"></i> <!-- Icon for secure transactions -->
+        <h6>100% Safe and Secure</h6>
+        <p>All Transactions are Fully Encrypted with State of the Art Technology!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <footer class="text-light pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Gaming Section -->
+        <div class="col-md-3">
+          <h5 class="text-warning">GAMING</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Nintendo Switch</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Playstation 5</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Playstation 4</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Xbox Series X</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Xbox One</a></li>
+            <li><a href="#" class="text-light text-decoration-none">PC/Mac</a></li>
+          </ul>
+        </div>
+  
+        <!-- Other Offers Section -->
+        <div class="col-md-3">
+          <h5 class="text-warning">OTHER OFFERS</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Digital Store</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Collectibles</a></li>
+            <li><a href="#" class="text-light text-decoration-none">More Essentials</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Pre-Orders</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Hot Deals</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Payment Methods</a></li>
+            <li><a href="#" class="text-light text-decoration-none">DB Rewards</a></li>
+          </ul>
+        </div>
+  
+        <!-- Customer Service Section -->
+        <div class="col-md-3">
+          <h5 class="text-warning">CUSTOMER SERVICE</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Return and Exchange</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Order Cancellation</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Product Warranty</a></li>
+            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Store Locations</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Follow Us and Explore -->
+        <div class="col-md-3">
+          <h5 class="text-warning">FOLLOW US</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+          </ul>
+          <h5 class="text-warning mt-4">EXPLORE</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Footer Branding -->
+  <div class="row mt-4">
+    <div class="col-md-6 text-center text-md-start">
+      <small>© 2024 by Eletro Gaming Hub. All Rights Reserved.</small>
+    </div>
+    <div class="col-md-6 text-center text-md-end">
+      <!-- Packed with Care Icon -->
+      <i class="bi bi-box fs-4 mx-2" style="color: #ffc10d;"></i>
+      <span>Packed with Care</span>
+      <!-- Brand New Guarantee Icon -->
+      <i class="bi bi-shield-check fs-4 mx-2" style="color: #ffc10d;"></i>
+      <span>Brand New Guarantee</span>
+    </div>
+  </div>
+  
+    </div>
+  </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
